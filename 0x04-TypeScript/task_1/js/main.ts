@@ -42,5 +42,4 @@ class StudentClass implements StudentClassInterface {
         return this.firstName;
     }
 }
-
-
+export { printTeacher, StudentClass };
