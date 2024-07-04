@@ -7,3 +7,13 @@ interface Teacher {
     contract: boolean;
     [propName: string]: any;
 }
+
+
+interface Directors extends Teacher {
+    numberOfReports: number;
+}
+
+type printTeacherFunction = (firstName: string, lastName: string) => string;
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    return `${firstName[0]}. ${lastName}`;
+};
